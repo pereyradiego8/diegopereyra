@@ -1,0 +1,152 @@
+body {
+	animation-duration: 2s;
+	animation-name: aparecer;
+	text-align: center;
+}
+h1 {
+	color: white;
+	background-color: green;
+}
+h2 {
+	@extend h1
+}
+#grid-index {
+	max-width: 1400px;
+	justify-items: start;
+	align-items: start;
+	display: grid;
+	grid-template-areas:
+		"imagen	texto";
+	width: 100%;
+	height: 100%;
+}
+    .index-text {
+	grid-area: texto;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+}
+    .dolares-img {
+	grid-area: imagen;
+	padding: 7px;
+	margin: 7px;
+}
+.e-mail {
+    padding: 2%;
+}
+h6 {
+	@extend h1
+}
+.cursos {
+    .load-cursos {
+        display: block;
+        margin: auto;
+	}
+}
+.texto-cursos {
+	padding-top: 2%;
+	padding-left: 10%;
+	padding-right: 10%;
+	}
+.preg-frec {
+	align-items: center;
+	font-size: 25px;
+	}
+    .img-preg-frec {
+		text-align: center;
+		padding: 2%;
+	}
+	#pfijo {
+		line-height: 150%;
+	}
+	#cauciones {
+		line-height: 150%;
+	}
+	#dolares {
+		line-height: 150%;
+	}
+th {
+	@extend h1
+}
+.ul-inv {
+	line-height: 300%;
+}
+.box-img-bro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2%;
+}
+footer {
+	display: grid;
+	grid-area: footer;
+	padding-top: 5%;
+}
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@media (max-width: 576px) {
+	.tit-subtit {
+		width: 100%;
+		height: 100%;
+	}
+	h1 {
+		height: 100%;
+	}
+	#grid-index {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.dolares-img {
+		height: 100%;
+		width: 90%;
+	}
+	.index-text {
+		grid-area: texto;
+		width: 100%;
+		height: 100%;
+		padding: 5px;
+	}
+	.img-link-brokers {
+		height: 100%;
+		width: 100%;
+	}
+	.img-preg-frec {
+		width: 50%;
+	}
+}
+@media (max-width: 768px) {
+	#grid-index {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.img-link-brokers {
+		height: 100%;
+		width: 100%;
+	}
+}
+@media (max-width: 992px) {
+	#grid-index {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+@media (max-width: 1024px) {
+	#grid-index {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	footer {
+		padding-top: 10%;
+	}
+}

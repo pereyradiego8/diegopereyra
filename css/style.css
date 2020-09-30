@@ -1,0 +1,155 @@
+/* line 1, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+body {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  text-align: center; }
+
+/* line 6, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+h1, h2, h6, th {
+  color: white;
+  background-color: green; }
+
+/* line 13, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+#grid-index {
+  max-width: 1400px;
+  justify-items: start;
+  align-items: start;
+  display: grid;
+  grid-template-areas: "imagen	texto";
+  width: 100%;
+  height: 100%; }
+
+/* line 23, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.index-text {
+  grid-area: texto;
+  height: 100%;
+  width: 100%;
+  text-align: left; }
+
+/* line 29, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.dolares-img {
+  grid-area: imagen;
+  padding: 7px;
+  margin: 7px; }
+
+/* line 34, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.e-mail {
+  padding: 2%; }
+
+/* line 41, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.cursos .load-cursos {
+  display: block;
+  margin: auto; }
+
+/* line 46, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.texto-cursos {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+/* line 51, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.preg-frec {
+  align-items: center;
+  font-size: 25px; }
+
+/* line 55, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.img-preg-frec {
+  text-align: center;
+  padding: 2%; }
+
+/* line 59, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+#pfijo {
+  line-height: 150%; }
+
+/* line 62, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+#cauciones {
+  line-height: 150%; }
+
+/* line 65, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+#dolares {
+  line-height: 150%; }
+
+/* line 71, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.ul-inv {
+  line-height: 300%; }
+
+/* line 74, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+.box-img-bro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%; }
+
+/* line 81, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+footer {
+  display: grid;
+  grid-area: footer;
+  padding-top: 5%; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media (max-width: 576px) {
+  /* line 95, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  .tit-subtit {
+    width: 100%;
+    height: 100%; }
+  /* line 99, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  h1, h2, h6, th {
+    height: 100%; }
+  /* line 102, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  #grid-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  /* line 107, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  .dolares-img {
+    height: 100%;
+    width: 90%; }
+  /* line 111, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  .index-text {
+    grid-area: texto;
+    width: 100%;
+    height: 100%;
+    padding: 5px; }
+  /* line 117, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  .img-link-brokers {
+    height: 100%;
+    width: 100%; }
+  /* line 121, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  .img-preg-frec {
+    width: 50%; } }
+
+@media (max-width: 768px) {
+  /* line 126, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  #grid-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  /* line 131, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  .img-link-brokers {
+    height: 100%;
+    width: 100%; } }
+
+@media (max-width: 992px) {
+  /* line 137, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  #grid-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%; } }
+
+@media (max-width: 1024px) {
+  /* line 144, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  #grid-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  /* line 149, ../Coderhouse/Diego Pereya - Coderhouse/scss/style.scss */
+  footer {
+    padding-top: 10%; } }
+
+/*# sourceMappingURL=style.css.map */
