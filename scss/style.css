@@ -6,20 +6,20 @@ body {
   text-align: center;
 }
 
-h1, h2, h6, th {
+h1, h2, h3, h6, th {
   color: white;
-  background-color: green;
+  background-color: #93c572;
 }
 
 #grid-index {
-  max-width: 1400px;
+  max-width: 99%;
   justify-items: start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "imagen	texto";
+      grid-template-areas: "grafico texto noticias";
   width: 100%;
   height: 100%;
 }
@@ -29,16 +29,46 @@ h1, h2, h6, th {
   -ms-grid-column: 2;
   grid-area: texto;
   height: 100%;
-  width: 100%;
+  width: 99%;
   text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.dolares-img {
+.grafico-img {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: imagen;
-  padding: 7px;
-  margin: 7px;
+  grid-area: grafico;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grafico-img .img-link-brokers1 {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.noti-economia {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: noticias;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.noti-economia .img-noticias {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .e-mail {
@@ -68,16 +98,8 @@ h1, h2, h6, th {
   padding: 2%;
 }
 
-#pfijo {
-  line-height: 150%;
-}
-
-#cauciones {
-  line-height: 150%;
-}
-
-#dolares {
-  line-height: 150%;
+#pfijo, #cauciones, #dolares {
+  line-height: 130%;
 }
 
 .ul-inv {
@@ -101,11 +123,30 @@ h1, h2, h6, th {
   padding: 2%;
 }
 
-footer {
-  display: -ms-grid;
-  display: grid;
-  grid-area: footer;
+.box-img-bro .img-link-brokers {
   padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.files {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.files .ani {
+  padding: 3%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  clear: both;
+  width: 100%;
 }
 
 @-webkit-keyframes aparecer {
@@ -131,9 +172,6 @@ footer {
     width: 100%;
     height: 100%;
   }
-  h1, h2, h6, th {
-    height: 100%;
-  }
   #grid-index {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -143,8 +181,19 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .dolares-img {
+  .grafico-img {
+    height: 100%;
+    width: 90%;
+  }
+  .img-noticias {
+    height: 100%;
+    width: 90%;
+  }
+  .img-link-brokers1 {
     height: 100%;
     width: 90%;
   }
@@ -163,6 +212,13 @@ footer {
   .img-preg-frec {
     width: 50%;
   }
+  footer {
+    position: relative;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    padding-top: 5%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -175,10 +231,20 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .img-link-brokers {
     height: 100%;
     width: 100%;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    padding-top: 5%;
   }
 }
 
@@ -192,6 +258,16 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    padding-top: 5%;
   }
 }
 
@@ -205,9 +281,16 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer {
-    padding-top: 10%;
+    position: relative;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    padding-top: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
