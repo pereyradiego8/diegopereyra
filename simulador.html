@@ -4,51 +4,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<title>Brokers para invertir en la bolsa</title>
-	<meta name="description" content="Brokers para poder iniciarse en el mercado bursátil.">
-	<meta name="keywords" content="Donde invertir, como invertir, pagina para invertir, intermediario, comprar acciones, comprar dolares">
-	<link rel="shortcut icon" href="img/icon-brokers.png">
+    <title>Simulador de rendimientos</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/simulador.js"></script>
 </head>
 <body>
-	<header class="sticky-top">
+  <header class="sticky-top">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="index.html">Página principal</a>
+			<a class="navbar-brand" href="#">Página principal</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			  <div class="navbar-nav">
 				<a class="nav-item nav-link" href="inversiones.html">Inversiones</a>
-				<a class="nav-item nav-link" href="simulador.html">Simulador</a>
+				<a class="nav-item nav-link active" href="simulador.html">Simulador</a>
 				<a class="nav-item nav-link" href="cursos.html">Cursos</a>
 				<a class="nav-item nav-link" href="contacto.html">Contacto</a>
 				<a class="nav-item nav-link" href="preguntas-frecuentes.html">Preguntas frecuentes</a>
-				<a class="nav-item nav-link active" href="normativas.html">Normativas</a>
+				<a class="nav-item nav-link" href="normativas.html">Normativas</a>
 			  </div>
 			</div>
 		</nav>
 	</header>
-	<div class="tit-subtit">
-		<h1>Normativas CNV</h1>
-	</div>
-		<div class="files">
-			<a href="https://www.byma.com.ar/wp-content/uploads/2017/04/Ley26831_Mercado_de_Capitales.pdf" target="_blank">
-				<img class="ani" src="img/file-small.svg" alt="">
-				<span class="ani">Ley N° 26.831</span>
-			</a>
-			<a href="https://www.byma.com.ar/wp-content/uploads/2017/04/Decreto_1023-2013.pdf" target="_blank">
-				<img class="ani" src="img/file-small.svg" alt="">
-				<span class="ani">Decreto Reglamentario N° 1023/2013</span>
-			</a>
-			<a href="https://www.byma.com.ar/wp-content/uploads/2017/04/TOC2013.pdf" target="_blank">
-				<img class="ani" src="img/file-small.svg" alt="">
-				<span class="ani">Normas CNV (N.T. 2013 y mod.)</span>
-			</a>
-		</div>
-		<footer>
-			<h6>Copyright © 1997-2020 Diego Pereyra, todos los derechos reservados.</h6>
-		</footer>
+<h1 class="tit-con">Simulador</h1>
+<div class="container border">
+<form>
+  <div class="form-group">
+    <label for="">
+      Ingrese el monto a invertir
+    </label>
+    <input type="number" id="montoAInvertir" placeholder="$">
+  </div>
+  <div class="form-group">
+    <label for="">Ingrese el plazo en dias (Min 30 - Máx 365)</label>
+    <input type="number" min="30" max="365" id="plazoEnDias" placeholder="Plazo">
+  </div>
+  <select id="tipoDeInversion">
+    <option value="PLAZOFIJO">Plazo fijo</option> 
+    <option value="CAUCION">Cauciones</option>
+    <option value="FCI">Fondo Comun de Inversión</option>
+  </select>
+  <button onclick="calcularRendimiento()" id="botonSimular">
+    Simular
+  </button>
+</form>
+</div>
+<footer>
+  <h6>Copyright © 1997-2020 Diego Pereyra, todos los derechos reservados.</h6>
+</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
