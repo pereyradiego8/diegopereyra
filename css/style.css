@@ -171,7 +171,7 @@ footer {
     width: 100%; }
   /* line 179, ../Diego Pereya - Coderhouse/scss/style.scss */
   footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     clear: both;
     width: 100%;
@@ -186,7 +186,7 @@ footer {
     align-items: center; }
   /* line 194, ../Diego Pereya - Coderhouse/scss/style.scss */
   footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     clear: both;
     width: 100%;
@@ -201,7 +201,7 @@ footer {
     align-items: center; }
   /* line 209, ../Diego Pereya - Coderhouse/scss/style.scss */
   footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     clear: both;
     width: 100%;
