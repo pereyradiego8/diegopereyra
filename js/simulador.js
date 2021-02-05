@@ -18,8 +18,3 @@ function calcularRendimiento() {
     document.body.appendChild(mensaje);
     }
 }
-h4 {
-  animation-duration: 2s;
-  animation-name: aparecer;
-  padding: 1%;
-}
