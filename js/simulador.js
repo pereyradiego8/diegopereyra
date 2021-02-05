@@ -1,7 +1,7 @@
 function calcularRendimiento() {
-  let montoInversion = document.getElementById('montoAInvertir').value;
-  let plazoInversion = document.getElementById('plazoEnDias').value;
-  let tipoInversion = document.getElementById('tipoDeInversion').value;
+  let montoInversion = $('#montoAInvertir').val();
+  let plazoInversion = $('#plazoEnDias').val();
+  let tipoInversion = $('#tipoDeInversion').val();
 
   if (tipoInversion == 'FCI') {
     porcentaje = 0.34;
@@ -13,6 +13,13 @@ function calcularRendimiento() {
 
   if (plazoInversion >= 30 && plazoInversion <= 365) {
     let rendimiento = (montoInversion * porcentaje / 365 * plazoInversion).toFixed(2);
-    alert(`El interés generado es de $${new Intl.NumberFormat("de-DE").format(rendimiento)}`);
+    let mensaje = document.createElement("h4");
+    mensaje.textContent = `El interés generado es de $${new Intl.NumberFormat("de-DE").format(rendimiento)}`;
+    document.body.appendChild(mensaje);
     }
+}
+h4 {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  padding: 1%;
 }
