@@ -1,19 +1,12 @@
 /* line 1, ../Diego Pereya - Coderhouse/scss/style.scss */
 body {
-  animation-duration: 2s;
-  animation-name: aparecer;
+  animation: aparecer 2s;
   text-align: center; }
 
 /* line 6, ../Diego Pereya - Coderhouse/scss/style.scss */
 h1, h2, h3, h6, th {
   color: white;
   background-color: #93c572; }
-
-h4 {
-  animation-duration: 2s;
-  animation-name: aparecer;
-  padding-top: 1%;
-}
 
 /* line 16, ../Diego Pereya - Coderhouse/scss/style.scss */
 #grid-index {
