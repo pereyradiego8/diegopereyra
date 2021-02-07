@@ -13,8 +13,13 @@ function calcularRendimiento() {
 
   if (plazoInversion >= 30 && plazoInversion <= 365) {
     let rendimiento = (montoInversion * porcentaje / 365 * plazoInversion).toFixed(2);
-    let mensaje = document.createElement("h4");
-    mensaje.textContent = `El interés generado es de $${new Intl.NumberFormat("de-DE").format(rendimiento)}`;
-    document.body.appendChild(mensaje);
-    }
+    $("h4").replaceWith(`<h4>El interés generado es de $${new Intl.NumberFormat("de-DE").format(rendimiento)}</h4>`);
+    $("h4").css("animation", "aparecer 2s");
+    $("h4").css("padding", "1%");
+  }
 }
+
+let form = document.getElementById("formSimu");
+form.addEventListener("submit", function (event){
+  event.preventDefault();
+});
