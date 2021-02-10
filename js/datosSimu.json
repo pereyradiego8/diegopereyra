@@ -1,0 +1,14 @@
+[
+    {
+        "tipoDeInversion" : "Plazo Fijo",
+        "rendimiento" : "37%"
+    },
+    {
+        "tipoDeInversion" : "FCI",
+        "rendimiento" : "34%"
+    },
+    {
+        "tipoDeInversion" : "Caucion",
+        "rendimiento" : "27%"
+    }
+]
